@@ -21,3 +21,23 @@ A smart IoT-based door locking system using **ESP32**, **Google Firebase**, and 
 
 ## 🔗 System Architecture
 
+
+## 🚀 Getting Started
+
+### 1. Firebase Setup
+- Go to [Firebase Console](https://console.firebase.google.com/)
+- Create a project and enable **Realtime Database**
+- Set rules (for testing):
+  ```json
+  {
+    "rules": {
+      ".read": "true",
+      ".write": "true"
+    }
+  }
+
+
+#define WIFI_SSID "Your_SSID"
+#define WIFI_PASSWORD "Your_PASSWORD"
+#define FIREBASE_HOST "your-project.firebaseio.com"
+#define FIREBASE_AUTH "your_firebase_database_secret"
